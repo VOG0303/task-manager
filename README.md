@@ -1,24 +1,26 @@
 # Task Manager
 
-This is a beginner-friendly Task Manager web app built as part of my Summer of Making project.  
-The goal of this project is to learn **HTML, CSS, and JavaScript** by building a functional task management app step by step.
+A simple web-based Task Manager built with **HTML, CSS, and JavaScript**.  
+This project is being developed step-by-step as a way to learn and improve frontend skills.
 
----
+## Current Features
+- Add new tasks
+- Display task list
 
-## Current Progress
-
-- Created a page with a **title**: "Task Manager"
-- Added a **Text Input** for entering tasks
-- Added an **Add button**
-- Added a placeholder for the **task list** (tasks will appear here eventually)
-
----
+## Planned Features
+- Mark tasks as completed
+- Delete tasks
+- Save tasks in browser (local storage)
 
 ## Goals
+- Learn and practice HTML, CSS, and JavaScript
+- Build a clean and professional project
+- Work on the project ~2 hours daily and track progress
 
-- Make the Add button **actually add tasks** using JavaScript
-- Add the ability to **mark tasks complete** and **delete tasks**
-- Apply **CSS styling** to improve the design
-- Learn **front-end development practices step by step**
+---
+
+### Project Status
+✅ Basic task adding functionality working.  
+🚧 Styling and extra features under development.  
 
 ---
