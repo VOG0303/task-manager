@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Task Manager</h1>
+    <div class="app">
+        <div id="main-heading">Task Manager</d>
+        <div class="task-input">
+            <input type="text" class="task-input" id="new-task-textbox" placeholder="Add a new task">
+            <button class="task-input" id="add-task-button">Add</button>
+        </div>
+        <ul id="task-list">
+        </ul>
+    </div>
 </body>
 </html>
