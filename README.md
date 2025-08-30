@@ -26,7 +26,7 @@ This project was created as part of my participation in **Hack Club's Summer of 
 
 ---
 
-##Tech Stack
+## Tech Stack
 
 - **HTML5** – Structure of the page
 - **CSS3** – Styling and animations
@@ -34,7 +34,7 @@ This project was created as part of my participation in **Hack Club's Summer of 
 
 ---
 
-##Notes
+## Notes
 
 - This project is a work-in-progress for learning and demonstration purposes.
 - Animations and UI behaviors have been customized for an appealing experience.
@@ -42,7 +42,7 @@ This project was created as part of my participation in **Hack Club's Summer of 
 
 ---
 
-##Demo
+## Demo
 
 You can see the live demo here:
 - https://vog0303.github.io/task-manager/?utm_source=chatgpt.com
