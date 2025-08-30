@@ -27,7 +27,7 @@ body {
 /* === Input & Button === */
 .task-input {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 20px;
 }
 
@@ -39,8 +39,18 @@ body {
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #444444;
 }
 
+.new-task-textbox:hover {
+    background-color:#f1f1f1;
+}
+
+.new-task-textbox:focus {
+    outline: none;
+    background-color:#dfdfdf;
+}
 .add-task-button {
     margin: 10px 5px 10px 10px;
     padding: 10px 20px;
@@ -50,11 +60,22 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.5s ease, text-shadow 0.5s ease;
 }
 
+.add-task-button:hover {
+    background-color: #ffffff;
+    color: #5084f3;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 
+}
+
+.add-task-button:active {
+    background-color:#d4d4d4;
+}
 /* === Task List === */
 .task-list {
     list-style-type: none;
@@ -62,26 +83,26 @@ body {
     margin: 20px 0px;
 }
 
-/* Each task card */
+/*=== Each task card ===*/
 .task-item {
     background-color: #ffffff;
-    padding: 12px 16px;
+    padding: 15px;
+    padding-left: 20px;
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
-    font-size: 20px;
+    font-size: 20px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background 0.3s ease;
+    transition: background-color 0.5s ease, font-size 1s ease, opacity 2s ease, margin 2s ease, padding 2s ease, height 2s ease;
 }
 
 .task-item:hover {
-    background-color: #f0f7ff;
-    
+    background-color: #fffec9;
 }
 
-/* Buttons inside tasks */
+/*=== Buttons inside tasks ===*/
 .task-item button {
     border: none;
     padding: 6px 10px;
@@ -89,43 +110,55 @@ body {
     margin-left: 8px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s ease;
-}
-
-/* Complete button */
-.complete-button {
-    background-color: #6fcf97;
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.5s ease, font-size 1s ease, opacity 2s ease, margin 2s ease, padding 2s ease, height 2s ease;
+}
 
+.task-item button:active {
+    background-color:#d4d4d4;
+}
+
+/*=== Complete button ===*/
+.complete-button {
+    background-color: #6fcf97;
 }
 
 .complete-button:hover {
     background-color: #ffffff;
     color: #57b883;
     font-weight: bolder;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Delete button */
+/*=== Delete button ===*/
 .delete-button {
     background-color: #eb5757;
-    color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .delete-button:hover {
     background-color: #ffffff;
     color: #d14848;
     font-weight: bolder;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Completed tasks */
+/*=== Completed tasks ===*/
 .task-completed {
     text-decoration: line-through;
-    color: #888;              /* faded gray text */
-    background-color: #b5eb9c; /* subtle background change */
+    color: #888;             
+    background-color: #d9faca;
 }
 
 .task-completed:hover {
-    background-color: #a7df8f; /* slightly darker on hover */
+    background-color: rgb(192, 231, 171);
+}   
+
+/*=== Class for removing ===*/
+.removing {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    font-size: 0;
 }

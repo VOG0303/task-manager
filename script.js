@@ -46,8 +46,13 @@ addButton.addEventListener("click", function() {
             buttonContainer.removeChild(completeBtn); // remove complete button
             
         });
+
         deleteBtn.addEventListener("click", function () {
-            taskList.removeChild(li); // remove from DOM
+            li.classList.add("removing"); // start the animation
+            buttonContainer.classList.add("removing");  
+            li.addEventListener("transitionend", function() {
+            li.remove(); // remove from DOM after animation
+            });
         });
     }
 });
