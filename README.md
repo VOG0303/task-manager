@@ -1,26 +1,50 @@
 # Task Manager
 
-A simple web-based Task Manager built with **HTML, CSS, and JavaScript**.  
-This project is being developed step-by-step as a way to learn and improve frontend skills.
-
-## Current Features
-- Add new tasks
-- Display task list
-
-## Planned Features
-- Mark tasks as completed
-- Delete tasks
-- Save tasks in browser (local storage)
-
-## Goals
-- Learn and practice HTML, CSS, and JavaScript
-- Build a clean and professional project
-- Work on the project ~2 hours daily and track progress
+A simple, interactive **Task Manager** web app built with **HTML, CSS, and JavaScript**.  
+This project was created as part of my participation in **Hack Club's Summer of Making**.
 
 ---
 
-### Project Status
-✅ Basic task adding functionality working.  
-🚧 Styling and extra features under development.  
+## Features
+
+- Add new tasks dynamically.
+- Mark tasks as completed (light green background + line-through).
+- Delete tasks with smooth fade-out and slide-up animation.
+- Responsive and interactive UI with hover effects.
+- Buttons for completing or deleting tasks placed neatly side-by-side.
+
+---
+
+## Project Status
+
+- **Progress**: Core functionality (add, complete, delete) implemented.
+- **UI/UX**: Hover effects, animations, and task styling polished.
+- **Next Steps**:  
+  - Persist tasks using `localStorage`.
+  - Optional: Drag & drop to reorder tasks.
+  - Further UI improvements and additional features.
+
+---
+
+##Tech Stack
+
+- **HTML5** – Structure of the page
+- **CSS3** – Styling and animations
+- **JavaScript** – Dynamic task management and interactivity
+
+---
+
+##Notes
+
+- This project is a work-in-progress for learning and demonstration purposes.
+- Animations and UI behaviors have been customized for an appealing experience.
+- AI assistance was used for guidance on code structure.
+
+---
+
+##Demo
+
+You can see the live demo here:
+- https://vog0303.github.io/task-manager/?utm_source=chatgpt.com
 
 ---
