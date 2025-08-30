@@ -45,6 +45,6 @@ This project was created as part of my participation in **Hack Club's Summer of 
 ## Demo
 
 You can see the live demo here:
-- https://vog0303.github.io/task-manager/?utm_source=chatgpt.com
+- https://vog0303.github.io/task-manager/?v=2
 
 ---
