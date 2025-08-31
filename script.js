@@ -43,11 +43,16 @@ addButton.addEventListener("click", function() {
          // ✅ functionality
         completeBtn.addEventListener("click", function () {
             li.classList.toggle("task-completed"); // toggle completed style
-            buttonContainer.removeChild(completeBtn); // remove complete button
-            
+            //Complete Button Fade
+            completeBtn.classList.add("removing"); // start the animation
+            completeBtn.classList.add("removing"); // start the animation
+            compeleteBtn.addEventListener("transitionend", function() {
+            compeleteBtn.remove(); // remove from DOM after animation
+            });
         });
 
         deleteBtn.addEventListener("click", function () {
+            //Task Item Fade
             li.classList.add("removing"); // start the animation
             buttonContainer.classList.add("removing");  
             li.addEventListener("transitionend", function() {
