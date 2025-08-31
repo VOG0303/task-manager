@@ -29,7 +29,7 @@ addButton.addEventListener("click", function() {
 
         buttonContainer.appendChild(completeBtn);
         buttonContainer.appendChild(deleteBtn);
-
+        
         // Append text + buttons
         li.appendChild(span);
         li.appendChild(buttonContainer);
@@ -40,21 +40,25 @@ addButton.addEventListener("click", function() {
         // clear textbox
         taskInput.value = "";
         
+        // Trigger fade-in
+        requestAnimationFrame(() => {
+        li.classList.add("show");
+        });
+
          // ✅ functionality
         completeBtn.addEventListener("click", function () {
-            li.classList.toggle("task-completed"); // toggle completed style
+            li.classList.add("task-completed"); // toggle completed style
             //Complete Button Fade
-            completeBtn.classList.add("removing"); // start the animation
-            completeBtn.classList.add("removing"); // start the animation
-            compeleteBtn.addEventListener("transitionend", function() {
-            compeleteBtn.remove(); // remove from DOM after animation
+            completeBtn.classList.add("remove"); // start the animation
+            completeBtn.addEventListener("transitionend", function() {
+            completeBtn.remove(); // remove from DOM after animation
             });
         });
 
         deleteBtn.addEventListener("click", function () {
+            buttonContainer.classList.add("remove");  
             //Task Item Fade
-            li.classList.add("removing"); // start the animation
-            buttonContainer.classList.add("removing");  
+            li.classList.add("remove"); // start the animation
             li.addEventListener("transitionend", function() {
             li.remove(); // remove from DOM after animation
             });
