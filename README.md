@@ -4,6 +4,13 @@ A visually appealing, interactive **Task Manager** web app built with **HTML, CS
 
 ---
 
+## Demo
+
+You can see the live demo here:
+- https://vog0303.github.io/task-manager/?v=2
+
+---
+
 ## 🔹 Features
 
 - **Add Tasks**: Users can add tasks through the input box and press "Add" to append them to the list.
@@ -64,12 +71,5 @@ A visually appealing, interactive **Task Manager** web app built with **HTML, CS
 
 - This project is a work-in-progress for learning and demonstration purposes.
 - AI assistance was used for guidance on code structure.
-
----
-
-## Demo
-
-You can see the live demo here:
-- https://vog0303.github.io/task-manager/?v=2
 
 ---
