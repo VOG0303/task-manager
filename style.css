@@ -1,14 +1,22 @@
 /* === Body & App Container === */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e7e6d0;
     display: flex;
     justify-content: center;
     padding: 40px;
+    background-color: #fcf9d8;
+    background: radial-gradient(circle, transparent 20%, rgba(252, 249, 216, 0.4) 20%, rgba(252, 249, 216, 0.4) 80%, transparent 80%, transparent),
+    radial-gradient(circle, transparent 20%, rgba(252, 249, 216, 0.4) 20%, rgba(252, 249, 216, 0.4) 80%, transparent 80%, transparent) 10px 10px,
+    linear-gradient(rgba(0, 0, 0, 0.4) 0.8px, transparent 0.8px) 0 -0.4px,
+    linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0.8px, rgba(252, 249, 216, 0.4) 0.8px) -0.4px 0;
+    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
 .app {
-    background-color: #f3f4f6;
+    /* background-image: url("/assets/magicpattern-geometric-patterns-1756627685047.png");
+    background-size: 640px;
+    background-repeat: no-repeat repeat; */
+    background-color: rgba(255, 255, 255, 0.5);
     width: 600px;
     padding: 20px;
     border-radius: 12px;
@@ -21,7 +29,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin: 10px 0px 30px 0px;
-    color: #032672;
+    color: rgba(3, 38, 114);
 }
 
 /* === Input & Button === */
@@ -40,22 +48,23 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 0.3s ease;
-    color: #444444;
+    color: rgb(68, 68, 68);
+    background-color: rgba(255, 255, 255, 0.5)
 }
 
 .new-task-textbox:hover {
-    background-color:#f1f1f1;
+    background-color:rgba(231, 231, 231, 0.6);
 }
 
 .new-task-textbox:focus {
     outline: none;
-    background-color:#dfdfdf;
+    background-color:rgba(212, 212, 212, 0.7);
 }
 .add-task-button {
     margin: 10px 5px 10px 10px;
     padding: 10px 20px;
     border: none;
-    background-color: #6f9dff;
+    background-color: rgba(58, 120, 255, 0.7);
     color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -67,14 +76,14 @@ body {
 }
 
 .add-task-button:hover {
-    background-color: #ffffff;
-    color: #5084f3;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #417dff;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 
 }
 
 .add-task-button:active {
-    background-color:#d4d4d4;
+    background-color:rgba(212, 212, 212, 0.8);
 }
 /* === Task List === */
 .task-list {
@@ -85,12 +94,12 @@ body {
 
 /*=== Each task card ===*/
 .task-item {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 15px;
     padding-left: 20px;
     margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
     font-size: 20px;    
     display: flex;
     justify-content: space-between;
@@ -99,7 +108,7 @@ body {
 }
 
 .task-item:hover {
-    background-color: #fffec9;
+    background-color: rgba(255, 252, 189, 0.4);
 }
 
 /*=== Buttons inside tasks ===*/
@@ -111,12 +120,15 @@ body {
     cursor: pointer;
     font-size: 16px;
     color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s ease, color 0.5s ease, font-size 1s ease, opacity 2s ease, margin 2s ease, padding 2s ease, height 2s ease;
 }
 
+.task-item button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 .task-item button:active {
-    background-color:#d4d4d4;
+    background-color:rgba(177, 177, 177, 0.5);
 }
 
 /*=== Complete button ===*/
@@ -125,7 +137,6 @@ body {
 }
 
 .complete-button:hover {
-    background-color: #ffffff;
     color: #57b883;
     font-weight: bolder;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -137,7 +148,6 @@ body {
 }
 
 .delete-button:hover {
-    background-color: #ffffff;
     color: #d14848;
     font-weight: bolder;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -147,11 +157,11 @@ body {
 .task-completed {
     text-decoration: line-through;
     color: #888;             
-    background-color: #d9faca;
+    background-color: rgba(169, 255, 129, 0.4);
 }
 
 .task-completed:hover {
-    background-color: rgb(192, 231, 171);
+    background-color: rgba(127, 226, 82, 0.4);;
 }   
 
 /*=== Class for removing ===*/
@@ -159,6 +169,5 @@ body {
     opacity: 0;
     margin: 0;
     padding: 0;
-    height: 0;
     font-size: 0;
 }
